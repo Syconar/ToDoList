@@ -4,18 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e55d522acc.js" crossorigin="anonymous"></script>
     <title>ToDoList App</title>
 </head>
 <body>
 
-<header>
-    <h1>Todolist app</h1>
-    <p>hello world</p>
-</header>
+    <main>
+        <h1>Todolist app</h1>
 
-<main>
+        <div class="wrapper">
+            <form>
+                <input id="todo-input" type="text" autocomplete="off" placeholder="Write anything and hit enter to add">
+                <button id="add-btn">ADD</button>
+            </form>
 
+            <ul id="todo-list">
+                <li class="list-item">
+                    <input type="checkbox" id="list-item-1">
+                    <label for="list-item-1" class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </label>
 
+                    <label for="list-item-1" class="todo-text">
+                        mediocre todolist app
+                    </label>
+
+                    <button class="delete-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </li>
+
+                <li class="list-item">
+                    <input type="checkbox" id="list-item-2">
+                    <label for="list-item-2" class="custom-checkbox">
+                        <i class="fa-solid fa-check"></i>
+                    </label>
+
+                    <label for="list-item-2" class="todo-text">
+                        finnish the app
+                    </label>
+
+                    <button class="delete-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </li>
+
+            </ul>
+        </div>
 </main>
     
 <script src="script.js"></script>
